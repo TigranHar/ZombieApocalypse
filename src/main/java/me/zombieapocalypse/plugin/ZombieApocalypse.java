@@ -34,7 +34,7 @@ public final class ZombieApocalypse extends JavaPlugin {
 
     public static boolean start = false;
     public static boolean startOver = false;
-    public static int count = 60;
+    public static int count = 3600;
     public static int nightsSurvived = 0;
 
     ZombieSpawn zombieSpawn = new ZombieSpawn();
@@ -73,7 +73,7 @@ public final class ZombieApocalypse extends JavaPlugin {
                     if(start && count <= 0 && startOver) {
                         start = false;
                         startOver = false;
-                        count = 60;
+                        count = 3600;
                         ChangeGameMods();
                     }
 
@@ -89,37 +89,37 @@ public final class ZombieApocalypse extends JavaPlugin {
 
                     switch (count) {
 
-                        case 60:
+                        case 3600:
                             Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "title @a title {\"text\":\"1 Hour Until Zombies Spawn\", \"color\":\"dark_green\"} ");
                             playSoundForAll(Sound.BLOCK_NOTE_BLOCK_PLING);
                             Bukkit.broadcastMessage(ChatColor.DARK_GREEN + "[Zombie Apocalypse] 1 Hour Until Zombies Spawn");
                             break;
 
-                        case 50:
+                        case 3000:
                             Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "title @a title {\"text\":\"50 minutes Until Zombies Spawn\", \"color\":\"dark_green\"} ");
                             playSoundForAll(Sound.BLOCK_NOTE_BLOCK_PLING);
                             Bukkit.broadcastMessage(ChatColor.DARK_GREEN + "[Zombie Apocalypse] 50 minutes Until Zombies Spawn");
                             break;
 
-                        case 40:
+                        case 2400:
                             Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "title @a title {\"text\":\"40 minutes Until Zombies Spawn\", \"color\":\"green\"} ");
                             playSoundForAll(Sound.BLOCK_NOTE_BLOCK_PLING);
                             Bukkit.broadcastMessage(ChatColor.DARK_GREEN + "[Zombie Apocalypse]" + ChatColor.GREEN +" 40 minutes Until Zombies Spawn");
                             break;
 
-                        case 30:
+                        case 1800:
                             Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "title @a title {\"text\":\"30 minutes Until Zombies Spawn\", \"color\":\"green\"} ");
                             playSoundForAll(Sound.BLOCK_NOTE_BLOCK_PLING);
                             Bukkit.broadcastMessage(ChatColor.DARK_GREEN + "[Zombie Apocalypse]" + ChatColor.GREEN +" 30 minutes Until Zombies Spawn");
                             break;
 
-                        case 20:
+                        case 1200:
                             Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "title @a title {\"text\":\"20 minutes Until Zombies Spawn\", \"color\":\"yellow\"} ");
                             playSoundForAll(Sound.BLOCK_NOTE_BLOCK_PLING);
                             Bukkit.broadcastMessage(ChatColor.DARK_GREEN + "[Zombie Apocalypse]" + ChatColor.YELLOW +" 20 minutes Until Zombies Spawn");
                             break;
 
-                        case 10:
+                        case 600:
                             Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "title @a title {\"text\":\"10 minutes Until Zombies Spawn\", \"color\":\"gold\"} ");
                             playSoundForAll(Sound.BLOCK_NOTE_BLOCK_PLING);
                             Bukkit.broadcastMessage(ChatColor.DARK_GREEN + "[Zombie Apocalypse]" + ChatColor.GOLD +" 10 minutes Until Zombies Spawn");
