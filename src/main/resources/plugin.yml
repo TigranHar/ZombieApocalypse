@@ -1,0 +1,11 @@
+name: ZombieApocalypse
+version: '${project.version}'
+main: me.zombieapocalypse.plugin.ZombieApocalypse
+api-version: 1.16
+commands:
+  start-zombieApocalypse:
+    description: start zombie apocalyse
+  stop-zombieApocalypse:
+    description: stop zombie apocalyse
+  reload-zombieApocalypse:
+    description: reload zombie apocalyse
